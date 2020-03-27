@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F19B02EB-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E2ETest", "test\E2ETest\E2ETest.csproj", "{D15E5FF6-C1E7-4110-A2BE-06ADA7ACA82B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tye.Hosting", "src\Microsoft.Tye.Hosting\Microsoft.Tye.Hosting.csproj", "{0F4F5A86-DD27-4AF9-BF97-221EAD5040E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Hosting", "src\Microsoft.Tye.Hosting\Microsoft.Tye.Hosting.csproj", "{0F4F5A86-DD27-4AF9-BF97-221EAD5040E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tye.Hosting.Diagnostics", "src\Microsoft.Tye.Hosting.Diagnostics\Microsoft.Tye.Hosting.Diagnostics.csproj", "{CEBFC149-8162-4A0A-9AD4-40498B9172CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Hosting.Diagnostics", "src\Microsoft.Tye.Hosting.Diagnostics\Microsoft.Tye.Hosting.Diagnostics.csproj", "{CEBFC149-8162-4A0A-9AD4-40498B9172CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tye.Hosting.Runtime", "src\Microsoft.Tye.Hosting.Runtime\Microsoft.Tye.Hosting.Runtime.csproj", "{34719884-1338-4965-BA2A-F98DB03733C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Hosting.Runtime", "src\Microsoft.Tye.Hosting.Runtime\Microsoft.Tye.Hosting.Runtime.csproj", "{34719884-1338-4965-BA2A-F98DB03733C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tye.Core", "src\Microsoft.Tye.Core\Microsoft.Tye.Core.csproj", "{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Core", "src\Microsoft.Tye.Core\Microsoft.Tye.Core.csproj", "{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "test\UnitTests\UnitTests.csproj", "{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,18 @@ Global
 		{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}.Release|x64.Build.0 = Release|Any CPU
 		{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}.Release|x86.ActiveCfg = Release|Any CPU
 		{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}.Release|x86.Build.0 = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|x64.Build.0 = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Debug|x86.Build.0 = Debug|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|x64.ActiveCfg = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|x64.Build.0 = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|x86.ActiveCfg = Release|Any CPU
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +126,7 @@ Global
 		{CEBFC149-8162-4A0A-9AD4-40498B9172CD} = {8C662D59-A3CB-466F-8E85-A8E6BA5E7601}
 		{34719884-1338-4965-BA2A-F98DB03733C2} = {8C662D59-A3CB-466F-8E85-A8E6BA5E7601}
 		{D0359C69-6EA9-4B03-9455-90E8E04F1CB0} = {8C662D59-A3CB-466F-8E85-A8E6BA5E7601}
+		{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A} = {F19B02EB-A372-417A-B2C2-EA0D5A3C76D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8002603-BB27-4500-BF86-274A8E72D302}
