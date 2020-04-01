@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Hosting.Runti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.Core", "src\Microsoft.Tye.Core\Microsoft.Tye.Core.csproj", "{D0359C69-6EA9-4B03-9455-90E8E04F1CB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "test\UnitTests\UnitTests.csproj", "{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Tye.UnitTests", "test\UnitTests\Microsoft.Tye.UnitTests.csproj", "{2233F4A8-10F9-40A6-BFD3-8D0C37F8359A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

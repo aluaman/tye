@@ -37,7 +37,7 @@ namespace Microsoft.Tye
                 {
                     var expandedProject = Environment.ExpandEnvironmentVariables(configService.Project);
                     var projectFile = new FileInfo(Path.Combine(builder.Source.DirectoryName, expandedProject));
-                    var project = new ProjectServiceBuilder(configService.Name, projectFile);
+                    var project = new ProjectServiceBuilder(configService.Name!, projectFile);
                     service = project;
 
                     project.Build = configService.Build ?? true;
@@ -55,7 +55,7 @@ namespace Microsoft.Tye
                 }
                 else if (!string.IsNullOrEmpty(configService.Image))
                 {
-                    var container = new ContainerServiceBuilder(configService.Name, configService.Image)
+                    var container = new ContainerServiceBuilder(configService.Name!, configService.Image)
                     {
                         Args = configService.Args,
                         Replicas = configService.Replicas ?? 1
@@ -74,7 +74,7 @@ namespace Microsoft.Tye
                         workingDirectory = Path.GetDirectoryName(expandedExecutable)!;
                     }
 
-                    var executable = new ExecutableServiceBuilder(configService.Name, expandedExecutable)
+                    var executable = new ExecutableServiceBuilder(configService.Name!, expandedExecutable)
                     {
                         Args = configService.Args,
                         WorkingDirectory = configService.WorkingDirectory != null ?
@@ -86,7 +86,7 @@ namespace Microsoft.Tye
                 }
                 else if (configService.External)
                 {
-                    var external = new ExternalServiceBuilder(configService.Name);
+                    var external = new ExternalServiceBuilder(configService.Name!);
                     service = external;
                 }
                 else
@@ -193,7 +193,7 @@ namespace Microsoft.Tye
 
             foreach (var configIngress in config.Ingress)
             {
-                var ingress = new IngressBuilder(configIngress.Name);
+                var ingress = new IngressBuilder(configIngress.Name!);
                 ingress.Replicas = configIngress.Replicas ?? 1;
 
                 builder.Ingress.Add(ingress);
